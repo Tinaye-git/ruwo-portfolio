@@ -65,9 +65,8 @@
 
 /* ──────────────────────────────────────────────────────────
    2. THEMES — data-theme attribute overrides
-   Default (no attribute) = Claude warm (the :root values above)
+   Default (no attribute) = Claude warm (the :root values above) knfdkjsbgdkjngjad
    ────────────────────────────────────────────────────────── */
-
 /* LINEN — light creamy beige, softer and more papery */
 [data-theme="linen"] {
   --color-bg: #FAF7F2;
