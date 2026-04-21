@@ -8,11 +8,13 @@
    0. THEME SWITCHER — runs first to avoid flash of wrong theme
    Reads the saved theme from localStorage and applies it to
    the <html> element before the rest of the page renders.
+
+   mneww
    ────────────────────────────────────────────────────────── */
 (function initTheme() {
-  const html       = document.documentElement;
-  const saved      = localStorage.getItem('portfolio-theme') || 'claude';
-  const themeBtns  = document.querySelectorAll('.theme-btn');
+  const html = document.documentElement;
+  const saved = localStorage.getItem('portfolio-theme') || 'claude';
+  const themeBtns = document.querySelectorAll('.theme-btn');
 
   // Apply the saved (or default) theme immediately
   html.setAttribute('data-theme', saved);
@@ -68,7 +70,7 @@
   // Map href values to section IDs
   // e.g. href="#about" → section id="about"
   const sectionIds = Array.from(navLinks).map(link => link.getAttribute('href').replace('#', ''));
-  const sections   = sectionIds.map(id => document.getElementById(id)).filter(Boolean);
+  const sections = sectionIds.map(id => document.getElementById(id)).filter(Boolean);
 
   if (!sections.length) return;
 
@@ -105,7 +107,7 @@
    ────────────────────────────────────────────────────────── */
 (function initHamburger() {
   const hamburgerBtn = document.getElementById('hamburger-btn');
-  const navLinks     = document.getElementById('nav-links');
+  const navLinks = document.getElementById('nav-links');
   if (!hamburgerBtn || !navLinks) return;
 
   function toggleMenu() {
@@ -148,15 +150,15 @@
     'Builder of things'
   ];
 
-  let phraseIndex  = 0;  // which phrase we're on
-  let charIndex    = 0;  // how many characters typed so far
-  let isDeleting   = false;
-  let isPaused     = false;
+  let phraseIndex = 0;  // which phrase we're on
+  let charIndex = 0;  // how many characters typed so far
+  let isDeleting = false;
+  let isPaused = false;
 
   // Typing speed (ms per character)
-  const TYPE_SPEED   = 70;
+  const TYPE_SPEED = 70;
   const DELETE_SPEED = 40;
-  const PAUSE_AFTER  = 1800; // how long to pause after full phrase
+  const PAUSE_AFTER = 1800; // how long to pause after full phrase
   const PAUSE_BEFORE = 300;  // pause before typing next phrase
 
   function tick() {
@@ -187,7 +189,7 @@
       if (charIndex === 0) {
         // Finished deleting — move to next phrase
         isDeleting = false;
-        isPaused   = true;
+        isPaused = true;
         phraseIndex = (phraseIndex + 1) % phrases.length;
       }
     }
@@ -215,7 +217,7 @@
     btn.addEventListener('click', () => {
       // Get the full poem panel this button controls
       const panelId = btn.getAttribute('aria-controls');
-      const panel   = document.getElementById(panelId);
+      const panel = document.getElementById(panelId);
       if (!panel) return;
 
       const isExpanded = btn.getAttribute('aria-expanded') === 'true';
@@ -245,7 +247,7 @@
    The form fields are cleared after submission.
    ────────────────────────────────────────────────────────── */
 (function initContactForm() {
-  const form    = document.getElementById('contact-form');
+  const form = document.getElementById('contact-form');
   const success = document.getElementById('contact-success');
   if (!form || !success) return;
 
@@ -254,8 +256,8 @@
     e.preventDefault();
 
     // Simple validation — check all required fields have values
-    const name    = form.querySelector('#contact-name').value.trim();
-    const email   = form.querySelector('#contact-email').value.trim();
+    const name = form.querySelector('#contact-name').value.trim();
+    const email = form.querySelector('#contact-email').value.trim();
     const message = form.querySelector('#contact-message').value.trim();
 
     if (!name || !email || !message) {

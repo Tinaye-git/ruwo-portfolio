@@ -9,48 +9,48 @@
    ────────────────────────────────────────────────────────── */
 :root {
   /* Colors */
-  --color-accent:       #7F77DD;
-  --color-accent-dark:  #534AB7;
+  --color-accent: #7F77DD;
+  --color-accent-dark: #534AB7;
   --color-accent-light: #EEEDFE;
-  --color-bg:           #F1EFE8;
-  --color-surface:      #FFFFFF;
-  --color-text:         #2C2C2A;
-  --color-text-sec:     #5F5E5A;
-  --color-text-muted:   #888780;
-  --color-border:       rgba(44, 44, 42, 0.15);
-  --color-teal:         #1D9E75;
-  --color-teal-light:   #E1F5EE;
-  --color-teal-dark:    #0F6E56;
-  --color-coral:        #D85A30;
-  --color-coral-light:  #FAECE7;
-  --color-coral-dark:   #993C1D;
+  --color-bg: #F1EFE8;
+  --color-surface: #FFFFFF;
+  --color-text: #2C2C2A;
+  --color-text-sec: #5F5E5A;
+  --color-text-muted: #888780;
+  --color-border: rgba(44, 44, 42, 0.15);
+  --color-teal: #1D9E75;
+  --color-teal-light: #E1F5EE;
+  --color-teal-dark: #0F6E56;
+  --color-coral: #D85A30;
+  --color-coral-light: #FAECE7;
+  --color-coral-dark: #993C1D;
 
   /* Typography */
-  --font-sans:   'Inter', system-ui, -apple-system, sans-serif;
-  --font-serif:  'Lora', Georgia, serif;
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-serif: 'Lora', Georgia, serif;
 
   /* Font sizes */
-  --text-xs:   12px;
-  --text-sm:   13px;
+  --text-xs: 12px;
+  --text-sm: 13px;
   --text-base: 16px;
-  --text-lg:   18px;
-  --text-xl:   20px;
-  --text-2xl:  24px;
-  --text-3xl:  32px;
-  --text-4xl:  48px;
+  --text-lg: 18px;
+  --text-xl: 20px;
+  --text-2xl: 24px;
+  --text-3xl: 32px;
+  --text-4xl: 48px;
 
   /* Spacing scale: 4 · 8 · 16 · 24 · 32 · 48 · 64 · 96 */
-  --sp-1:   4px;
-  --sp-2:   8px;
-  --sp-3:  16px;
-  --sp-4:  24px;
-  --sp-5:  32px;
-  --sp-6:  48px;
-  --sp-7:  64px;
-  --sp-8:  96px;
+  --sp-1: 4px;
+  --sp-2: 8px;
+  --sp-3: 16px;
+  --sp-4: 24px;
+  --sp-5: 32px;
+  --sp-6: 48px;
+  --sp-7: 64px;
+  --sp-8: 96px;
 
   /* Radii */
-  --radius-sm:  8px;
+  --radius-sm: 8px;
   --radius-md: 12px;
 
   /* Border */
@@ -70,41 +70,41 @@
 
 /* LINEN — light creamy beige, softer and more papery */
 [data-theme="linen"] {
-  --color-bg:           #FAF7F2;
-  --color-surface:      #FFFFFF;
-  --color-text:         #2C2C2A;
-  --color-text-sec:     #5F5E5A;
-  --color-text-muted:   #988F83;
-  --color-border:       rgba(44, 44, 42, 0.12);
+  --color-bg: #FAF7F2;
+  --color-surface: #FFFFFF;
+  --color-text: #2C2C2A;
+  --color-text-sec: #5F5E5A;
+  --color-text-muted: #988F83;
+  --color-border: rgba(44, 44, 42, 0.12);
   --color-accent-light: #EEEDFE;
-  --color-teal-light:   #E1F5EE;
-  --color-coral-light:  #FAECE7;
+  --color-teal-light: #E1F5EE;
+  --color-coral-light: #FAECE7;
 }
 
 /* DARK — explicit manual dark theme */
 [data-theme="dark"] {
-  --color-bg:          #1A1915;
-  --color-surface:     #242320;
-  --color-text:        #EDECEA;
-  --color-text-sec:    #B0AEA9;
-  --color-text-muted:  #6B6966;
-  --color-border:      rgba(237, 236, 234, 0.12);
-  --color-accent-light:#2A2850;
-  --color-teal-light:  #0E2E24;
+  --color-bg: #1A1915;
+  --color-surface: #242320;
+  --color-text: #EDECEA;
+  --color-text-sec: #B0AEA9;
+  --color-text-muted: #6B6966;
+  --color-border: rgba(237, 236, 234, 0.12);
+  --color-accent-light: #2A2850;
+  --color-teal-light: #0E2E24;
   --color-coral-light: #2D1710;
 }
 
 /* System dark mode — only applies when no manual theme is chosen */
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="claude"]):not([data-theme="linen"]):not([data-theme="dark"]) {
-    --color-bg:          #1A1915;
-    --color-surface:     #242320;
-    --color-text:        #EDECEA;
-    --color-text-sec:    #B0AEA9;
-    --color-text-muted:  #6B6966;
-    --color-border:      rgba(237, 236, 234, 0.12);
-    --color-accent-light:#2A2850;
-    --color-teal-light:  #0E2E24;
+    --color-bg: #1A1915;
+    --color-surface: #242320;
+    --color-text: #EDECEA;
+    --color-text-sec: #B0AEA9;
+    --color-text-muted: #6B6966;
+    --color-border: rgba(237, 236, 234, 0.12);
+    --color-accent-light: #2A2850;
+    --color-teal-light: #0E2E24;
     --color-coral-light: #2D1710;
   }
 }
@@ -112,7 +112,9 @@
 /* ──────────────────────────────────────────────────────────
    3. RESET & BASE
    ────────────────────────────────────────────────────────── */
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -156,9 +158,23 @@ button {
 /* ──────────────────────────────────────────────────────────
    4. TYPOGRAPHY SCALE
    ────────────────────────────────────────────────────────── */
-h1 { font-size: clamp(32px, 6vw, 48px); font-weight: 500; line-height: 1.15; }
-h2 { font-size: clamp(24px, 4vw, 32px); font-weight: 500; line-height: 1.25; }
-h3 { font-size: var(--text-xl);         font-weight: 500; line-height: 1.3; }
+h1 {
+  font-size: clamp(32px, 6vw, 48px);
+  font-weight: 500;
+  line-height: 1.15;
+}
+
+h2 {
+  font-size: clamp(24px, 4vw, 32px);
+  font-weight: 500;
+  line-height: 1.25;
+}
+
+h3 {
+  font-size: var(--text-xl);
+  font-weight: 500;
+  line-height: 1.3;
+}
 
 /* ──────────────────────────────────────────────────────────
    5. LAYOUT UTILITIES
@@ -196,7 +212,8 @@ h3 { font-size: var(--text-xl);         font-weight: 500; line-height: 1.3; }
   right: 0;
   z-index: 100;
   background-color: var(--color-bg);
-  border-bottom: 0.5px solid transparent; /* shown on scroll via JS */
+  border-bottom: 0.5px solid transparent;
+  /* shown on scroll via JS */
   transition: border-color var(--transition);
   height: var(--nav-h);
 }
@@ -228,7 +245,8 @@ h3 { font-size: var(--text-xl);         font-weight: 500; line-height: 1.3; }
 
 /* Desktop nav links */
 .nav__links {
-  display: none; /* hidden by default on mobile */
+  display: none;
+  /* hidden by default on mobile */
   align-items: center;
   gap: var(--sp-4);
 }
@@ -269,9 +287,11 @@ h3 { font-size: var(--text-xl);         font-weight: 500; line-height: 1.3; }
 .nav__hamburger--open .hamburger-line:nth-child(1) {
   transform: translateY(7.5px) rotate(45deg);
 }
+
 .nav__hamburger--open .hamburger-line:nth-child(2) {
   opacity: 0;
 }
+
 .nav__hamburger--open .hamburger-line:nth-child(3) {
   transform: translateY(-7.5px) rotate(-45deg);
 }
@@ -330,6 +350,7 @@ h3 { font-size: var(--text-xl);         font-weight: 500; line-height: 1.3; }
   .nav__links {
     display: flex;
   }
+
   .nav__hamburger {
     display: none;
   }
@@ -363,6 +384,7 @@ h3 { font-size: var(--text-xl);         font-weight: 500; line-height: 1.3; }
   background-color: var(--color-accent);
   color: #fff;
 }
+
 .btn--primary:hover {
   background-color: var(--color-accent-dark);
 }
@@ -372,6 +394,7 @@ h3 { font-size: var(--text-xl);         font-weight: 500; line-height: 1.3; }
   color: var(--color-accent);
   border-color: var(--color-accent);
 }
+
 .btn--outline:hover {
   background-color: var(--color-accent-light);
 }
@@ -490,7 +513,8 @@ h3 { font-size: var(--text-xl);         font-weight: 500; line-height: 1.3; }
   display: flex;
   align-items: center;
   gap: 2px;
-  height: 28px; /* fixed height to prevent layout shift */
+  height: 28px;
+  /* fixed height to prevent layout shift */
 }
 
 .hero__subtitle {
@@ -507,8 +531,15 @@ h3 { font-size: var(--text-xl);         font-weight: 500; line-height: 1.3; }
 }
 
 @keyframes blink {
-  0%, 100% { opacity: 1; }
-  50%       { opacity: 0; }
+
+  0%,
+  100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
 }
 
 .hero__mantra {
@@ -552,6 +583,7 @@ h3 { font-size: var(--text-xl);         font-weight: 500; line-height: 1.3; }
     align-items: flex-start;
     gap: var(--sp-6);
   }
+
   .about__photo-col {
     flex-shrink: 0;
   }
@@ -588,6 +620,7 @@ h3 { font-size: var(--text-xl);         font-weight: 500; line-height: 1.3; }
 }
 
 @media (min-width: 640px) {
+
   .about__photo,
   .about__photo-fallback {
     width: 140px;
@@ -954,7 +987,8 @@ h3 { font-size: var(--text-xl);         font-weight: 500; line-height: 1.3; }
 
 /* JS adds .poem-card__full--open to expand */
 .poem-card__full--open {
-  max-height: 2000px; /* large enough for any poem */
+  max-height: 2000px;
+  /* large enough for any poem */
 }
 
 .poem-card__full-text {
@@ -1017,7 +1051,8 @@ h3 { font-size: var(--text-xl);         font-weight: 500; line-height: 1.3; }
   font-weight: 500;
   line-height: 1.5;
   color: var(--color-text);
-  position: relative; /* above decorative mark */
+  position: relative;
+  /* above decorative mark */
 }
 
 .mantras__closing {
@@ -1194,7 +1229,7 @@ h3 { font-size: var(--text-xl);         font-weight: 500; line-height: 1.3; }
   padding: 0;
   margin: -1px;
   overflow: hidden;
-  clip: rect(0,0,0,0);
+  clip: rect(0, 0, 0, 0);
   white-space: nowrap;
   border: 0;
 }
