@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- ═══ META & SEO ═══ -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Munyaradzi Tinaye Ruwo — Computer Science & AI/ML Student</title>
+  <meta name="description"
+    content="Portfolio of Munyaradzi Tinaye Ruwo — CS & AI/ML student at Manav Rachna University, Presidential Scholar, philomath, and poet from Zimbabwe." />
+  <meta property="og:title" content="Munyaradzi Tinaye Ruwo — Portfolio" />
+  <meta property="og:description"
+    content="Computer Science student, AI/ML specialization, Presidential Scholar, poet. From Chipinge, Zimbabwe to Manav Rachna University, India." />
+  <meta property="og:type" content="website" />
+
+  <!-- ═══ FONTS ═══ -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Lora:ital,wght@0,400;0,500;1,400;1,500&display=swap"
+    rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- ═══════════════════════════════════════ -->
+  <!-- NAVIGATION       kjfndskjbghd                      -->
+  <!-- ═══════════════════════════════════════ -->
+  <nav class="nav" id="main-nav" role="navigation" aria-label="Main navigation">
+    <div class="nav__inner container">
+      <!-- Logo / name -->
+      <a href="#hero" class="nav__logo">Munyaradzi Ruwo</a>
+
+      <!-- Desktop links jbfjbdh -->
+      <ul class="nav__links" id="nav-links" role="list">
+        <li><a href="#about" class="nav__link">About</a></li>
+        <li><a href="#skills" class="nav__link">Skills</a></li>
+        <li><a href="#achievements" class="nav__link">Achievements</a></li>
+        <li><a href="#projects" class="nav__link">Projects</a></li>
+        <li><a href="#poems" class="nav__link">Poems</a></li>
+        <li><a href="#contact" class="nav__link">Contact</a></li>
+      </ul>
+
+      <!-- Theme switcher -->
+      <div class="theme-switcher" role="group" aria-label="Choose theme">
+        <button class="theme-btn theme-btn--active" data-theme="cyan" aria-label="Cyan theme"
+          title="Cyan (cool)">Cyan</button>
+        <button class="theme-btn" data-theme="linen" aria-label="Linen theme" title="Linen (beige)">Linen</button>
+        <button class="theme-btn" data-theme="dark" aria-label="Dark theme" title="Dark">Dark</button>
+      </div>
+
+      <!-- Hamburger (mobile) -->
+      <button class="nav__hamburger" id="hamburger-btn" aria-label="Toggle navigation menu" aria-expanded="false"
+        aria-controls="nav-links">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
+    </div>
+  </nav>
+
+  <main>
+    <!-- ═══════════════════════════════════════ -->
+    <!-- SECTION 01 — HERO                      -->
+    <!-- ═══════════════════════════════════════ -->
+    <section class="hero" id="hero" aria-label="Hero introduction">
+      <div class="container hero__inner">
+        <!-- Eyebrow -->
+        <p class="hero__eyebrow">From Chipinge, Zimbabwe to Manav Rachna University, India</p>
+
+        <!-- Heading -->
+        <h1 class="hero__heading">Hi, I'm Munyaradzi Tinaye Ruwo</h1>
+
+        <!-- Typing subtitle -->
+        <div class="hero__subtitle-wrap" aria-label="Roles: Computer Science student, AI/ML, Philomath, Poet">
+          <span class="hero__subtitle" id="typing-text"></span><span class="hero__cursor" aria-hidden="true">|</span>
+        </div>
+
+        <!-- Mantra -->
+        <p class="hero__mantra">"Tap the power within — all in, or not at all."</p>
+
+        <!-- CTA Buttons -->
+        <div class="hero__ctas">
+          <a href="#projects" class="btn btn--primary">View my work</a>
+          <a href="#poems" class="btn btn--outline">Read my poems</a>
+        </div>
+
+        <!-- Presidential Scholarship Badge -->
+        <div class="hero__badge" aria-label="Presidential Scholarship award">
+          <span class="badge badge--teal">🏆 Presidential Scholar — Government of Zimbabwe</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════ -->
+    <!-- SECTION 02 — ABOUT                     -->
+    <!-- ═══════════════════════════════════════ -->
+    <section class="section about" id="about" aria-label="About Munyaradzi">
+      <div class="container">
+        <h2 class="section__heading">About me</h2>
+
+        <!-- Two-column layout: photo + bio -->
+        <div class="about__layout">
+
+          <!-- Profile photo area -->
+          <div class="about__photo-col">
+            <div class="about__photo-wrap">
+              <!-- Profile image with initials fallback -->
+              <img src="assets/profile.jpg" alt="Munyaradzi Tinaye Ruwo" class="about__photo"
+                onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'" />
+              <!-- Fallback initials circle (hidden by default) -->
+              <div class="about__photo-fallback" aria-hidden="true" style="display:none;">MTR</div>
+            </div>
+          </div>
+
+          <!-- Bio text -->
+          <div class="about__bio-col">
+            <p class="about__bio">
+              I'm a philomath from Chipinge, Zimbabwe — currently studying Computer Science &amp; Engineering with a
+              specialization in AI &amp; ML at Manav Rachna University, India, in association with Xebia.
+            </p>
+            <p class="about__bio">
+              I wake up at 4am. I read, I pray, I move. Discipline is my foundation.
+            </p>
+            <p class="about__bio">
+              I'm drawn to the intersection of technology and human depth. I believe intelligent systems should serve
+              people, not the other way around. Inspired by Elon Musk's relentless curiosity and shaped by a book called
+              <em>The Devil's Proposal</em>, I've learned that clarity of mind is a superpower.
+            </p>
+            <p class="about__bio">
+              Outside tech, I play chess, write poetry, dance, volunteer in community programs, and spend quality time
+              with my mother. I'm an introvert who loves to travel — go figure.
+            </p>
+            <p class="about__bio">
+              My long-term vision: become an AI researcher, build a startup around ethical intelligent systems, and one
+              day give back to the community that raised me. As we say — it takes all of us to raise one of us.
+            </p>
+          </div>
+        </div>
+
+        <!-- Stat cards -->
+        <div class="about__stats">
+          <div class="stat-card">
+            <span class="stat-card__value">20</span>
+            <span class="stat-card__label">Age</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-card__value">2nd Sem</span>
+            <span class="stat-card__label">Current semester</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-card__value">ZW → IN</span>
+            <span class="stat-card__label">From Zimbabwe to India</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-card__value">4am</span>
+            <span class="stat-card__label">Daily start time</span>
+          </div>
+        </div>
+
+        <!-- Interests pills -->
+        <div class="about__interests" aria-label="Interests">
+          <span class="pill pill--purple">Chess</span>
+          <span class="pill pill--purple">Poetry</span>
+          <span class="pill pill--purple">Dancing</span>
+          <span class="pill pill--purple">Reading</span>
+          <span class="pill pill--purple">Travelling</span>
+          <span class="pill pill--purple">Music</span>
+          <span class="pill pill--purple">Community service</span>
+          <span class="pill pill--purple">Philosophy</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════ -->
+    <!-- SECTION 03 — SKILLS                    -->
+    <!-- ═══════════════════════════════════════ -->
+    <section class="section skills" id="skills" aria-label="Skills">
+      <div class="container">
+        <h2 class="section__heading">What I work with</h2>
+
+        <div class="skills__grid">
+
+          <!-- Languages & markup -->
+          <div class="skill-group">
+            <p class="skill-group__label">Languages &amp; markup</p>
+            <div class="skill-group__pills">
+              <span class="pill pill--purple">Python</span>
+              <span class="pill pill--purple">HTML</span>
+              <span class="pill pill--purple">CSS</span>
+              <span class="pill pill--purple">JavaScript</span>
+            </div>
+          </div>
+
+          <!-- Concepts & domains -->
+          <div class="skill-group">
+            <p class="skill-group__label">Concepts &amp; domains</p>
+            <div class="skill-group__pills">
+              <span class="pill pill--purple">Artificial Intelligence</span>
+              <span class="pill pill--purple">Machine Learning</span>
+              <span class="pill pill--purple">Data Structures</span>
+              <span class="pill pill--purple">Algorithms</span>
+              <span class="pill pill--purple">Prompt Engineering</span>
+              <span class="pill pill--purple">Data Visualization</span>
+            </div>
+          </div>
+
+          <!-- Tools & platforms -->
+          <div class="skill-group">
+            <p class="skill-group__label">Tools &amp; platforms</p>
+            <div class="skill-group__pills">
+              <span class="pill pill--teal">Git</span>
+              <span class="pill pill--teal">GitHub</span>
+              <span class="pill pill--teal">VS Code</span>
+              <span class="pill pill--teal">Kiro IDE</span>
+              <span class="pill pill--teal">Netlify</span>
+            </div>
+          </div>
+
+          <!-- Soft skills -->
+          <div class="skill-group">
+            <p class="skill-group__label">Soft skills</p>
+            <div class="skill-group__pills">
+              <span class="pill pill--coral">Leadership</span>
+              <span class="pill pill--coral">Analytical thinking</span>
+              <span class="pill pill--coral">Adaptability</span>
+              <span class="pill pill--coral">Continuous learning</span>
+              <span class="pill pill--coral">Public speaking</span>
+              <span class="pill pill--coral">Emotional maturity</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════ -->
+    <!-- SECTION 04 — ACHIEVEMENTS              -->
+    <!-- ═══════════════════════════════════════ -->
+    <section class="section achievements" id="achievements" aria-label="Achievements">
+      <div class="container">
+        <h2 class="section__heading">Milestones &amp; recognition</h2>
+        <p class="section__intro">A record of moments that shaped the journey.</p>
+
+        <div class="achievements__grid">
+
+          <!-- Card 1 — Presidential Scholarship (featured, purple left border) -->
+          <article class="achievement-card achievement-card--featured" aria-label="Presidential Scholarship">
+            <div class="achievement-card__icon" aria-hidden="true">★</div>
+            <div class="achievement-card__body">
+              <h3 class="achievement-card__title">Presidential Scholarship</h3>
+              <p class="achievement-card__desc">Awarded by the Government of Zimbabwe — a national scholarship
+                recognizing academic excellence and potential.</p>
+              <span class="badge badge--teal-sm">National · Zimbabwe</span>
+            </div>
+          </article>
+
+          <!-- Card 2 — Dean's List -->
+          <article class="achievement-card" aria-label="Dean's List">
+            <div class="achievement-card__icon" aria-hidden="true">🎓</div>
+            <div class="achievement-card__body">
+              <h3 class="achievement-card__title">Dean's List — Semester 1</h3>
+              <p class="achievement-card__desc">Recognized for academic excellence in the first semester at Manav Rachna
+                University. Holds a certificate of achievement.</p>
+              <span class="badge badge--grey-sm">2025–26 · MRU</span>
+              <a href="assets/certificates/deans-list.jpg" target="_blank" rel="noopener noreferrer"
+                class="cert-link">View certificate ↗</a>
+            </div>
+          </article>
+
+          <!-- Card 3 — POP 2nd Prize -->
+          <article class="achievement-card" aria-label="Protect Our Planet 2nd Prize">
+            <div class="achievement-card__icon" aria-hidden="true">🌍</div>
+            <div class="achievement-card__body">
+              <h3 class="achievement-card__title">2nd Prize — Protect Our Planet event</h3>
+              <p class="achievement-card__desc">Competed and placed second in the POP environmental initiative. Awarded
+                two certificates and a trophy.</p>
+              <span class="badge badge--grey-sm">Environmental · Competition</span>
+              <a href="assets/certificates/pop-event.jpg" target="_blank" rel="noopener noreferrer"
+                class="cert-link">View certificate ↗</a>
+            </div>
+          </article>
+
+          <!-- Card 4 — BE10 AI Tools Workshop -->
+          <article class="achievement-card" aria-label="BE10 AI Tools Workshop">
+            <div class="achievement-card__icon" aria-hidden="true">⚡</div>
+            <div class="achievement-card__body">
+              <h3 class="achievement-card__title">BE10 AI tools workshop</h3>
+              <p class="achievement-card__desc">Completed a certified workshop on AI tools for development, gaining
+                hands-on experience with modern AI-assisted workflows.</p>
+              <span class="badge badge--grey-sm">Certificate · AI</span>
+              <a href="assets/certificates/be10-workshop.jpg" target="_blank" rel="noopener noreferrer"
+                class="cert-link">View certificate ↗</a>
+            </div>
+          </article>
+
+          <!-- Card 5 — Data Visualization Workshop -->
+          <article class="achievement-card" aria-label="Data Visualization Workshop">
+            <div class="achievement-card__icon" aria-hidden="true">📊</div>
+            <div class="achievement-card__body">
+              <h3 class="achievement-card__title">Data visualization workshop</h3>
+              <p class="achievement-card__desc">Certified in data visualization techniques — translating complex data
+                into clear, compelling visual narratives.</p>
+              <span class="badge badge--grey-sm">Certificate · Data</span>
+              <a href="assets/certificates/data-viz.jpg" target="_blank" rel="noopener noreferrer"
+                class="cert-link">View certificate ↗</a>
+            </div>
+          </article>
+
+          <!-- Card 6 — Chess Club Captain -->
+          <article class="achievement-card" aria-label="Chess Club Captain">
+            <div class="achievement-card__icon" aria-hidden="true">♟</div>
+            <div class="achievement-card__body">
+              <h3 class="achievement-card__title">Chess Club Captain</h3>
+              <p class="achievement-card__desc">Led the Chess Club at Gaza High School. Won a district-level chess medal
+                at primary school level.</p>
+              <span class="badge badge--grey-sm">Leadership · Sport</span>
+            </div>
+          </article>
+
+          <!-- Card 7 — School Prefect -->
+          <article class="achievement-card" aria-label="School Prefect">
+            <div class="achievement-card__icon" aria-hidden="true">◈</div>
+            <div class="achievement-card__body">
+              <h3 class="achievement-card__title">School prefect</h3>
+              <p class="achievement-card__desc">Elected as a school prefect at Gaza High School — a role built on trust,
+                responsibility, and leading by example.</p>
+              <span class="badge badge--grey-sm">Leadership</span>
+            </div>
+          </article>
+
+          <!-- Card 8 — Scripture Union President -->
+          <article class="achievement-card" aria-label="Scripture Union Club President">
+            <div class="achievement-card__icon" aria-hidden="true">✦</div>
+            <div class="achievement-card__body">
+              <h3 class="achievement-card__title">Scripture Union Club President</h3>
+              <p class="achievement-card__desc">Served as president of the Scripture Union Club, developing
+                communication, faith-based leadership, and community.</p>
+              <span class="badge badge--grey-sm">Leadership · Faith</span>
+            </div>
+          </article>
+
+          <!-- Card 9 — Mathematics Olympiad -->
+          <article class="achievement-card" aria-label="Mathematics Olympiad">
+            <div class="achievement-card__icon" aria-hidden="true">∑</div>
+            <div class="achievement-card__body">
+              <h3 class="achievement-card__title">Mathematics Olympiad — Round 2</h3>
+              <p class="achievement-card__desc">Advanced to the second round of the national Mathematics Olympiad during
+                high school — a testament to analytical strength.</p>
+              <span class="badge badge--grey-sm">Academic · High School</span>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════ -->
+    <!-- SECTION 05 — PROJECTS                  -->
+    <!-- ═══════════════════════════════════════ -->
+    <section class="section projects" id="projects" aria-label="Projects">
+      <div class="container">
+        <h2 class="section__heading">Things I've built &amp; things I'm building</h2>
+
+        <!-- Subsection A: Course projects -->
+        <div class="projects__group">
+          <p class="projects__group-label">Course projects</p>
+          <div class="projects__grid">
+
+            <!-- Card 1 — Resume Parser -->
+            <article class="project-card" aria-label="Resume Parser project">
+              <div class="project-card__header">
+                <h3 class="project-card__title">Resume Parser</h3>
+                <span class="badge badge--teal-sm">Completed</span>
+              </div>
+              <p class="project-card__desc">A web app that extracts name, email, phone, skills, and education from
+                pasted resume text using JavaScript regex.</p>
+              <div class="project-card__footer">
+                <div class="project-card__tags">
+                  <span class="pill pill--purple pill--sm">HTML</span>
+                  <span class="pill pill--purple pill--sm">CSS</span>
+                  <span class="pill pill--purple pill--sm">JavaScript</span>
+                  <span class="pill pill--purple pill--sm">Regex</span>
+                </div>
+                <span class="project-card__github project-card__github--disabled" title="Coming soon"
+                  aria-label="GitHub link coming soon">
+                  <!-- GitHub icon -->
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path
+                      d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
+                  </svg>
+                  Coming soon
+                </span>
+              </div>
+            </article>
+
+            <!-- Card 2 — Library Management System -->
+            <article class="project-card" aria-label="Library Management System project">
+              <div class="project-card__header">
+                <h3 class="project-card__title">Library Management System</h3>
+                <span class="badge badge--teal-sm">Completed</span>
+              </div>
+              <p class="project-card__desc">Frontend-only LMS with admin/user roles, book borrowing, due dates, and full
+                localStorage persistence. No frameworks.</p>
+              <div class="project-card__footer">
+                <div class="project-card__tags">
+                  <span class="pill pill--purple pill--sm">HTML</span>
+                  <span class="pill pill--purple pill--sm">CSS</span>
+                  <span class="pill pill--purple pill--sm">JavaScript</span>
+                  <span class="pill pill--purple pill--sm">localStorage</span>
+                </div>
+                <span class="project-card__github project-card__github--disabled" title="Coming soon"
+                  aria-label="GitHub link coming soon">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path
+                      d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
+                  </svg>
+                  Coming soon
+                </span>
+              </div>
+            </article>
+
+          </div>
+        </div>
+
+        <!-- Subsection B: On the horizon -->
+        <div class="projects__group">
+          <p class="projects__group-label">On the horizon</p>
+          <div class="projects__grid">
+
+            <!-- Card 3 — Project Ellison -->
+            <article class="project-card project-card--coming" aria-label="Project Ellison — coming soon">
+              <div class="project-card__header">
+                <h3 class="project-card__title">
+                  <span aria-hidden="true">🔒</span> Project Ellison
+                </h3>
+                <span class="badge badge--coral-sm">Coming soon</span>
+              </div>
+              <p class="project-card__desc project-card__desc--muted">Something is coming. Stay tuned.</p>
+            </article>
+
+            <!-- Card 4 — Project Harllah -->
+            <article class="project-card project-card--coming" aria-label="Project Harllah — coming soon">
+              <div class="project-card__header">
+                <h3 class="project-card__title">
+                  <span aria-hidden="true">🔒</span> Project Harllah
+                </h3>
+                <span class="badge badge--coral-sm">Coming soon</span>
+              </div>
+              <p class="project-card__desc project-card__desc--muted">Something is coming. Stay tuned.</p>
+            </article>
+
+            <!-- Card 5 — Project Entertain -->
+            <article class="project-card project-card--coming" aria-label="Project Entertain — coming soon">
+              <div class="project-card__header">
+                <h3 class="project-card__title">
+                  <span aria-hidden="true">🔒</span> Project Entertain
+                </h3>
+                <span class="badge badge--coral-sm">Coming soon</span>
+              </div>
+              <p class="project-card__desc project-card__desc--muted">Something is coming. Stay tuned.</p>
+            </article>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════ -->
+    <!-- SECTION 06 — POEMS                     -->
+    <!-- ═══════════════════════════════════════ -->
+    <section class="section poems" id="poems" aria-label="Poems">
+      <div class="container">
+        <h2 class="section__heading">From the page</h2>
+        <p class="section__intro">Writing is how I make sense of the world.</p>
+        <p class="poems__credit">— Tinaye</p>
+
+        <div class="poems__grid">
+
+          <!-- Poem 1 — Who am I -->
+          <article class="poem-card" aria-label="Poem: Who am I">
+            <h3 class="poem-card__title">Who am I</h3>
+            <!-- Preview -->
+            <div class="poem-card__preview">
+              <p class="poem-card__lines">
+                Who am I to anyone? Do I mean anything to anyone?<br />
+                Am I a possession one could cherish for a lifetime?<br />
+                Or am I meant to be cast aside once I've served my purpose?<br />
+                Who am I to anyone, really?
+              </p>
+            </div>
+            <!-- Toggle button -->
+            <button class="poem-toggle" aria-expanded="false" aria-controls="poem-1-full">Read full poem</button>
+            <!-- Full poem (hidden by default) -->
+            <div class="poem-card__full" id="poem-1-full" aria-hidden="true">
+              <p class="poem-card__full-text">
+                Who am I to anyone? Do I mean anything to anyone? Am I a possession one could cherish for a lifetime? Or
+                am I meant to be cast aside once I've served my purpose? Do I mean anything to anyone? Who am I to
+                anyone, really? Who am I, I wonder? Today I reminisced over the bonds I've made with people thus far in
+                my life — and none of them still exist. Who am I, I wonder? It almost seems as if I'm just a chapter in
+                people's lives that they can just flip over — or close once they're done with it. Like a phase people
+                will eventually transition out of and erase. Is it all I'm meant to be? Maybe — the irony, I believe
+                there is nothing between the ground and the throne — so I'm always all in, too quick to bond to people
+                who'll leave just as fast. The cycle continues, like I'm stuck in a loop. Maybe that's all I'm meant to
+                be — just a passing chapter....
+              </p>
+            </div>
+          </article>
+
+          <!-- Poem 2 — Doormats -->
+          <article class="poem-card" aria-label="Poem: Doormats">
+            <h3 class="poem-card__title">Doormats</h3>
+            <div class="poem-card__preview">
+              <p class="poem-card__lines">
+                Is this an act?<br />
+                Or is this just a re-act?<br />
+                Because somebody told me to be at —<br />
+                Wait, shouldn't I be the one saying come at —
+              </p>
+            </div>
+            <button class="poem-toggle" aria-expanded="false" aria-controls="poem-2-full">Read full poem</button>
+            <div class="poem-card__full" id="poem-2-full" aria-hidden="true">
+              <p class="poem-card__full-text">
+                Is this an act?<br />
+                Or this is just a re-act?<br />
+                Because somebody told me to be at —<br />
+                Wait shouldn't I be the one saying come at —<br />
+                Or maybe be saying look at —<br />
+                That comet —<br />
+                Sometimes I feel like I'm a doormat<br />
+                Because I'm always getting stepped at<br />
+                Makes sense because I can't even re-act<br />
+                Maybe I should call my toppy Charmaine —<br />
+                We both reside in the doormat dormaine —<br />
+                We both deserve some tenderness, maybe a sip of some champagne —<br />
+                To flush away a doormat's pain —<br />
+                Yikes, what a stereotypical brain?<br />
+                Maybe we should start our own little campaign —<br />
+                As if there will be something to gain —<br />
+                But what would we call it though?<br />
+                Maybe, 'To the doormats, here's how to escape from the door,'<br />
+                Here's how to rise from the bottom floor<br />
+                To love yourself more till you glow<br />
+                To invest in yourself more and grow<br />
+                To when you're on your last straw<br />
+                And life mercilessly strikes you with a blow<br />
+                Strike back with a mighty claw<br />
+                Much stronger than ever before<br />
+                Till you reach the shore<br />
+                Glad that you've won the war....
+              </p>
+            </div>
+          </article>
+
+          <!-- Poem 3 — Unfinished -->
+          <article class="poem-card" aria-label="Poem: Unfinished">
+            <h3 class="poem-card__title">Unfinished</h3>
+            <div class="poem-card__preview">
+              <p class="poem-card__lines">
+                I do not want her perfect —<br />
+                I mean where do you go from perfect?<br />
+                I have a strong belief in wabi sabi —<br />
+                What I mean is:
+              </p>
+            </div>
+            <button class="poem-toggle" aria-expanded="false" aria-controls="poem-3-full">Read full poem</button>
+            <div class="poem-card__full" id="poem-3-full" aria-hidden="true">
+              <p class="poem-card__full-text">
+                I do not want her perfect —<br />
+                I mean where do you go from perfect? —<br />
+                I have a strong belief in wabi sabi —<br />
+                What I mean is:<br />
+                As long as her character isn't shaddy —<br />
+                I'll love her even if her breasts are saggy —<br />
+                I'll love her even if her stomach is flabby —<br />
+                I'll love her even if her body is baggy —<br />
+                I'll even love her if her teeth are gappy —<br />
+                Yes! My love will be the filler —<br />
+                In this destructive world of ours, I'll be her pillar.<br />
+                In a world so chiller —<br />
+                I'll be her mirror —<br />
+                The good kind. The kind that shows her reflections of herself she should love.<br />
+                The kind that makes her place herself above.<br />
+                I don't know about Bonnie and Clyde but we'll always be hand in glove.<br />
+                Let her be the hand, I'll be the glove.<br />
+                But I'm doomed because a glove, she might remove.<br />
+                Even so I'll be her dove —<br />
+                I'll always return to her with an olive leaf<br />
+                So that she knows I bear relief.
+              </p>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════ -->
+    <!-- SECTION 07 — MANTRAS                   -->
+    <!-- ═══════════════════════════════════════ -->
+    <section class="section mantras" id="mantras" aria-label="Mantras">
+      <div class="container">
+        <h2 class="section__heading">What I live by</h2>
+
+        <div class="mantras__blocks">
+
+          <blockquote class="mantra-block">
+            <span class="mantra-block__quote-mark" aria-hidden="true">"</span>
+            <p class="mantra-block__text">
+              Tap the power within —<br />always bet on yourself.
+            </p>
+          </blockquote>
+
+          <blockquote class="mantra-block">
+            <span class="mantra-block__quote-mark" aria-hidden="true">"</span>
+            <p class="mantra-block__text">
+              There is nothing between the ground and the throne —<br />
+              so it's either you're all in, or not at all.<br />
+              No half measures.
+            </p>
+          </blockquote>
+
+        </div>
+
+        <p class="mantras__closing">These aren't just words. They're the operating system.</p>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════ -->
+    <!-- SECTION 08 — CONTACT                   -->
+    <!-- ═══════════════════════════════════════ -->
+    <section class="section contact" id="contact" aria-label="Contact">
+      <div class="container">
+        <h2 class="section__heading">Let's connect</h2>
+        <p class="section__intro">I'm always open to conversations about technology, ideas, or life.</p>
+
+        <!-- Social links -->
+        <div class="contact__socials" role="list" aria-label="Social media links">
+
+          <!-- LinkedIn -->
+          <a href="https://www.linkedin.com/in/munyaradzi-ruwo-7443312b9" target="_blank" rel="noopener noreferrer"
+            class="social-link" aria-label="LinkedIn profile" role="listitem">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path
+                d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+            </svg>
+            LinkedIn
+          </a>
+
+          <!-- GitHub -->
+          <a href="https://github.com/Tinaye-git" target="_blank" rel="noopener noreferrer" class="social-link"
+            aria-label="GitHub profile" role="listitem">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path
+                d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
+            </svg>
+            GitHub
+          </a>
+
+          <!-- Instagram -->
+          <a href="https://www.instagram.com/munyaradzitinayeruwo" target="_blank" rel="noopener noreferrer"
+            class="social-link" aria-label="Instagram profile" role="listitem">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path
+                d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z" />
+            </svg>
+            Instagram
+          </a>
+
+          <!-- Facebook -->
+          <a href="https://www.facebook.com/people/Munyaradzi-Tinaye-Ruwo" target="_blank" rel="noopener noreferrer"
+            class="social-link" aria-label="Facebook profile" role="listitem">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+              <path
+                d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+            </svg>
+            Facebook
+          </a>
+
+          <!-- Email -->
+          <a href="mailto:ruwotinaye5@gmail.com" class="social-link" aria-label="Send an email to Munyaradzi"
+            role="listitem">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+              stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <rect x="2" y="4" width="20" height="16" rx="2" />
+              <path d="M2 7l10 7 10-7" />
+            </svg>
+            Email
+          </a>
+
+        </div>
+
+        <!-- Contact form -->
+        <form class="contact__form" id="contact-form" novalidate aria-label="Contact form">
+          <div class="form-group">
+            <label for="contact-name" class="form-label">Name</label>
+            <input type="text" id="contact-name" name="name" class="form-input" placeholder="Your name" required
+              autocomplete="name" />
+          </div>
+          <div class="form-group">
+            <label for="contact-email" class="form-label">Email</label>
+            <input type="email" id="contact-email" name="email" class="form-input" placeholder="your@email.com" required
+              autocomplete="email" />
+          </div>
+          <div class="form-group">
+            <label for="contact-message" class="form-label">Message</label>
+            <textarea id="contact-message" name="message" class="form-input form-textarea" rows="4"
+              placeholder="What's on your mind?" required></textarea>
+          </div>
+          <button type="submit" class="btn btn--primary">Send message</button>
+          <!-- Success message (shown after submit) -->
+          <p class="contact__success" id="contact-success" aria-live="polite" hidden>
+            Thanks for reaching out — I'll get back to you soon.
+          </p>
+        </form>
+
+        <p class="contact__closing">Currently open to collaborations, internships, and interesting conversations.</p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ═══════════════════════════════════════ -->
+  <!-- FOOTER                                 -->
+  <!-- ═══════════════════════════════════════ -->
+  <footer class="footer" role="contentinfo">
+    <div class="container footer__inner">
+      <p class="footer__copy">© 2026 Munyaradzi Tinaye Ruwo · Built with intention</p>
+      <p class="footer__mantra"><em>Tap the power within.</em></p>
+      <a href="#hero" class="footer__top" aria-label="Back to top">↑ Back to top</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
